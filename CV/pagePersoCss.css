@@ -1,0 +1,375 @@
+/*les fonts*/
+
+@font-face {
+    font-family: "boom";
+    src: url("./fonts/Boomboyah.ttf");
+}
+
+* {
+    font-family: "Dosis";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*en general*/
+
+body {
+    background-color: #fdfcfc;
+}
+
+
+
+h3 {
+    font-family: "Dosis";
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 170px;
+    color: #212943;
+}
+
+h4,
+h5 {
+    font-family: "Dosis";
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #212943;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+/*La navigation*/
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    right: 0px;
+    top: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-right: 0px;
+    margin-bottom: -70px;
+    z-index: 1000;
+    width: 350px;
+}
+
+nav a {
+    font-size: 1.9em;
+    font-weight: 600;
+    color: #212943;
+    text-decoration: none;
+}
+
+nav li {
+    margin-right: 12px;
+}
+
+nav a:hover {
+    color: #dd4b43;
+    border-bottom: 3px;
+}
+
+
+/*Le header : photo/Nom/titre*/
+
+
+.photoLogo {
+    text-align: center;
+    margin-bottom: -180px;
+}
+
+
+h1.firstTitle {
+    color: #212943;
+    font-family: "boom";
+    font-weight: lighter;
+    font-size: 8.8em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -50px;
+    
+}
+
+h2 {
+    color: #212943;
+    font-size: 2.2em;
+    text-align: center;
+    text-decoration: overline;
+    margin-bottom: 60px;
+    padding-top:0px;
+}
+
+@media screen and (min-width: 768px) {
+    h2{
+        color: #212943;
+        font-size: 2.9em;
+        text-align: center;
+        text-decoration: overline;
+    }
+}
+
+/* section 1: présentation*/
+
+
+.h3withe {
+    color: #fdfcfc;
+}
+
+section.backgroundFor {
+    background-color: #212943;
+    padding-top: 1pt;
+    padding-bottom: 20pt;
+}
+
+
+
+.p1 {
+    font-size: 1.2em;
+    margin-top: -10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: left;
+    color: #fdfcfc;
+    
+}
+@media screen and (min-width:768px) {
+    .p1 {
+        font-size: 1.6em;
+        margin-top: -10px;
+        padding-right: 150px;
+        padding-left: 170px;
+        text-align: left;
+        color: #fdfcfc;
+        
+}
+
+
+#listLinks {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-right: 150px;
+    padding-left: 170px;
+}
+
+#listLinks li {
+    margin: 10px;
+}
+
+
+/*section 2: Mes compétences*/
+
+#skills {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+span#cat1,
+span#cat2,
+span#cat3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#skills ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+#skills li {
+    margin-bottom: 2pt;
+}
+
+/*section 3: Portfolio*/
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+.zoom{
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+@media screen and (min-width:768px) {
+    #portfolio {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 140px;
+        margin-right: 140px;
+        
+}
+
+
+
+/*section 4: Mes experiences*/
+
+#experiences {
+    list-style: none;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+@media screen and (min-width:768px) {
+    #experiences {
+        list-style: none;
+        margin-left: 140px;
+        margin-right: 140px;
+        
+    }
+}
+
+#experiences li {
+    font-size: 1.1em;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    
+}
+
+#experiences h5 {
+    margin-top: 0;
+}
+
+.yearxp {
+    margin-right: 40px;
+    text-align: center;
+    background-color:#efa9a5;
+    align-self: flex-start;
+    padding: 8px;
+    width: 100px;
+}
+
+.yearxp2 {
+    margin-right: 40px;
+    text-align: center;
+    background-color:#efa9a5;
+    align-self: flex-start;
+    padding: 8px;
+    width: 100px;
+}
+
+
+.nobackground {
+    margin-right: 40px;
+    background-color: transparent;
+    align-self: flex-start;
+    padding: 8px;
+    width: 100px;
+}
+
+.xp {
+    padding: 8px;
+    width: 800px;
+}
+
+.lineSpacing {
+    margin-top: 0.0em;
+    padding-top: 0.0em;
+}
+
+
+/*section 5: Mes formations*/
+
+#training {
+    list-style: none;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+@media screen and (min-width:768px) {
+    #training {
+        list-style: none;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+}
+
+#training li {
+    font-size: 1.1em;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+#training h5 {
+    margin-top: 0;
+}
+
+/*Retour haut de page*/
+.top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*section footer*/
+footer{
+    color: #dd4b43;
+    text-align: center;
+}
+
+/*section formulaire de contact*/
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    flex-direction: column;
+
+}
+
+form input, textarea{
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: 1px #dd4b43;
+    padding: 3px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+form button{
+    background-color: #dd4b43;
+    color:white;
+    border:none;
+    border-radius: 3px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    font-weight: 800;
+    font-size: 25px;    
+}
+button:hover {
+    background-color: #dd7e78;
+}
+
+#contenairButton {
+    display: flex;
+    justify-content: center;
+}
+
+}}

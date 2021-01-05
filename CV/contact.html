@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <Title>Delphine Seite - Développeur Web</Title>
+    <meta charset="UTF-8" />
+    <meta description="Ma page personnelle développeur web" />
+    <meta keywords="developpeur, web, front-end" />
+    <link rel="stylesheet" href="./pagePersoCss.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Finger+Paint&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="bloc_page">
+         <!--pour centrer la page j'imagine que ce sera important en responsive -->
+        <header>
+            <!-- pour quand j'aurais un menu à alimenter-->
+            <a id="onTop"></a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="photoLogo">
+                <img src="./photoLogo.png" alt="photo de profil" height="500" />
+            </div>
+            <h1 class=firstTitle>
+                Delphine Séité
+            </h1>
+            <h2>Développeur Web - en recherche de stage</h2>
+        </header>
+
+            <section class="backgroundFor" id="contact">
+                <form action="https://formspree.io/f/xgeppddq" method="POST">
+                    <input type="email" id="email" name="_replyto" placeholder="Votre email" required><br>
+
+                    <input type="text" id="subject" name="subject" placeholder="Objet"><br>
+
+                    <textarea placeholder="Rédigez votre message" cols="40" rows="10" name="message" id="message"></textarea><br>
+
+                    <div id="contenairButton">
+                        <button id="button" type="submit"><img src="./rocket.png" value="send" height="40" path="blue">Envoyer</button>
+                    </div>
+                </form>
+            </section>
+            <div class="top">
+                <a href="#onTop"><img src="./hautDePage.png" alt="hautDePage" height="40"></a>
+            </div>
+        </div>
+        <footer>
+            <p>&#169; Delphine Séité</p>
+        </footer>
+    </body>
+</html>
